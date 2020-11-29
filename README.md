@@ -1,6 +1,12 @@
 # programmazione-dinamica
 Teoria ed esercizi di programmazione dinamica
 
+## Visual studio code
+1. Scarica e installa l'interprete Python da [questo link](https://www.python.org/downloads/)
+2. Installa l'[estensione Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) dalla sezione `Extensions`
+3. View > Command Palette > cerca "Python: Select Interpreter" > seleziona l'interprete corretto
+4. Ora c'è un bottone "play" nell'angolo in alto a destra
+
 ## Teoria
 - [Python1](/teoria/python1.md)
 - [Python2](/teoria/python2.md)
