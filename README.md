@@ -1,4 +1,4 @@
-# linguaggi dinamici
+# Linguaggi dinamici
 Teoria ed esercizi di programmazione dinamica
 
 ## Visual studio code
