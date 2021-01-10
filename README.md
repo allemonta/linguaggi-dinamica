@@ -15,3 +15,4 @@ Teoria ed esercizi di programmazione dinamica
 - [Python4](/teoria/python4.md)
 - [Python5](/teoria/python5.md)
 - [Python6](/teoria/python6.md)
+- [Tipizzazione](/teoria/tipizzazione.md)

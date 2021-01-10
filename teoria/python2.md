@@ -17,6 +17,32 @@ Se si tenta di eseguire un numero di accessi superiore al numero di elementi del
 - Con 2 parametri si ha `passo = 1`
 - Con 1 parametro si ha `passo = 1` e `valore-iniziale = 0`
 
+## Creazione iterabile
+Per creare un iterabile tramite classe questo deve avere i metodi `__iter__(self)` che restituisce un'oggetto (il vero e proprio iterabile) che ha un metodo `__next__(self)` che restituisce il valore da iterare (o `StopIteration` se i valori sono finiti)
+
+Esempio
+```py
+class squares:
+    def __init__(self,n):
+        self.n = n
+        self.i = 0
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.i == self.n:
+            raise StopIteration
+
+        t = self.i
+        self.i += 1
+        return t*t
+
+for n in squares(10):
+    print(n)
+```
+
+
 ## List comprehension
 Liste:
 `[<espressione> for <id> in <iterabile> if <condizione>]`
@@ -96,3 +122,6 @@ except StopIteration: pass
 ```
 
 I thread sono pensati per l'esecuzione parallela (su CPU multicore) e sono gestiti dal SO, mentre le courotine implementano una concorrenza cooperativa e queste decidono autonomamente quando cedere (`yield`) il controllo. 
+
+## Trusti vari
+Dato un iterabile si possono ottenere tutti i suoi valori ad esempio (prendendo come riferimento `squares` così: `tuple(squares(10))`
