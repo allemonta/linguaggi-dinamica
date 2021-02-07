@@ -1,5 +1,5 @@
 # Linguaggi dinamici
-Teoria ed esercizi di programmazione dinamica
+Teoria ed esercizi di linguaggi dinamici
 
 ## Visual studio code
 1. Scarica e installa l'interprete Python da [questo link](https://www.python.org/downloads/)
